@@ -1,9 +1,9 @@
-#AUTOMATED TEST – TECHNICAL EXERCISE
+# AUTOMATED TEST – TECHNICAL EXERCISE
 
 The task is to create an automation project for the following requirements. JavaScript/Cypress is recommended to demonstrate your command over Cypress/JavaScript and showcase your skills 
 in a practical setting.
 
-##Requirement:
+## Requirement:
 
 Please write ten appropriate automated tests to test the following scenario:
 
@@ -14,7 +14,7 @@ Please write ten appropriate automated tests to test the following scenario:
 5. Click on any card within that section (representing subjects).
 6. Develop tests to validate the functionality of this page.
 
-##Deliverables:
+## Deliverables:
 
 The following deliverables are expected:
 
@@ -25,7 +25,7 @@ assumptions made.
 3. A summary outlining your test approach, covered test cases, execution results, and 
 assumptions.
 
-##Evaluation Criteria:
+## Evaluation Criteria:
 
 The code will be evaluated based on the following criteria:
 
