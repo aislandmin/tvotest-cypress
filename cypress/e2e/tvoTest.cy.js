@@ -107,8 +107,16 @@ describe('TVO Test Tuite', () => {
       // Generate the random integer in [1, 8]
       const randomIntGrade = Math.floor(Math.random() * 8) + 1
       cy.log(`randomIntGrade: ${randomIntGrade}`)
+
+      //if pink note shows up, close it at first
+      cy.get('div.pink_banner').then($el => {
+        if ($el.length) {
+          cy.log('pink banner shows up')
+          cy.get('div.pink_banner_x').click()
+        }
+      })
       //Choose a Grade level between 1 and 8 randomly
-      cy.get('nav.js-menu--is-open.sub-nav--is-open').should('be.visible').find('a').contains(`Grade ${randomIntGrade}`).click()
+      cy.get('nav.js-menu--is-open.sub-nav--is-open').find('a').contains(`Grade ${randomIntGrade}`).click()
 
       //Scroll down to the "Learn Forward in the Curriculum" section
       cy.get('.shg-box-content').contains('Learn Forward in the Curriculum').scrollIntoView()
